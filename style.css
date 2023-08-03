@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 98vh;
+    background: black;
+    color: white;
+
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+
+
+.calculator {
+    width: 18rem;
+    height: min-content;
+
+    padding: 1rem .5rem;
+
+    border: .1rem solid white;
+    border-radius: .3rem;
+}
+
+.display {
+    border: .1rem dotted gray;
+    border-radius: .2rem;
+
+    text-align: end;
+
+    padding: .4rem .7rem;
+    margin-bottom: 1rem;
+
+}
+
+.inputs {
+    color: whitesmoke;
+    font-size: x-large;
+    text-align: end;
+    overflow-x: hidden;
+}
+
+.result {
+
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: .3rem;
+}
+
+[data-key] {
+    padding: .5rem;
+    border: none;
+    border-radius: .2rem;
+
+    font-size: x-large;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+}
+
+
+
+
+[data-key]:hover {
+    background: rgb(0, 213, 255);
+    color: black;
+}
+
+
+[data-key]:active {
+    background: rgb(0, 175, 210);
+    color: black;
+}
+
+
+.func {
+    color: cyan;
+}
+
+.func:hover {
+    background-color: cyan;
+    color: black;
+}
+
+[data-key='='] {
+    color: yellow;
+}
+
+[data-key='=']:hover {
+    background-color: yellow;
+    color: black;
+}
